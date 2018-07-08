@@ -1,0 +1,139 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">InventoryApp</string>
+
+    <!-- Title for the activity to add a new book [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_book">Add a Book</string>
+
+    <!-- Title for the activity to edit a book [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_book">Edit Book</string>
+
+    <!-- Label for overview category of attributes in the editor -->
+    <string name="edit_book_overview">Overview</string>
+
+    <!-- Label for supplier category of attributes in the editor -->
+    <string name="edit_book_supplier_text_view">Supplier</string>
+
+    <!-- Text hint for name in the editor -->
+    <string name="edit_book_name_hint">Book Name</string>
+
+    <!-- Text hint for price in the editor -->
+    <string name="edit_book_price_hint">Price</string>
+
+    <!-- Text hint for supplier name in the editor -->
+    <string name="edit_book_supplier_name_hint">Supplier Name</string>
+
+    <!-- Text hint for supplier phone in the editor -->
+    <string name="edit_book_supplier_phone_hint">Supplier Phone Number</string>
+
+    <!-- Text hint for quantity in the editor -->
+    <string name="edit_book_quantity_hint">Quantity</string>
+
+    <!-- Label for currency in the editor -->
+    <string name="edit_book_currency">$</string>
+
+    <!-- Label for plus button in the editor -->
+    <string name="edit_book_plus_btn">+</string>
+
+    <!-- Label for minus button in the editor -->
+    <string name="edit_book_minus_btn">-</string>
+
+    <!-- Label for call supplier button in the editor -->
+    <string name="edit_book_call_supplier_btn">CALL SUPPLIER</string>
+
+    <!-- Label for editor menu option to save book and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current book [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for overflow menu option that inserts fake book data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all book data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Books</string>
+
+    <!-- Label for empty view in CatalogActivity -->
+    <string name="action_empty_view_text">There are no books. Please tab the button in the bottom left corner to add a book.</string>
+
+    <!-- Label for quantity list item in CatalogActivity -->
+    <string name="quantity_item">Quantity: <xliff:g example="13" id="quantity">%d</xliff:g></string>
+
+    <!-- Label for price list item in CatalogActivity -->
+    <string name="price_item">Price: <xliff:g example="20.99" id="price">%.2f</xliff:g>$</string>
+
+    <!-- Toast message for no books in CatalogActivity when Sale button is pressed -->
+    <string name="no_books">Book is out of stock</string>
+
+    <!-- Label for sale button in list_item.xml-->
+    <string name="sale_button">Sale</string>
+
+    <!-- Toast message in editor when current book was successfully saved  -->
+    <string name="save_book_successful">Book saved</string>
+
+    <!-- Toast message in editor when current book has failed to be saved  -->
+    <string name="save_book_failed">Error with saving book</string>
+
+    <!-- Toast message in editor when current book was successfully deleted  -->
+    <string name="delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted  -->
+    <string name="delete_book_failed">Error with deleting book</string>
+
+    <!-- Toast message in editor when current book was successfully updated  -->
+    <string name="update_book_successful">Book updated</string>
+
+    <!-- Toast message in editor when current book has failed to be updated  -->
+    <string name="updated_book_failed">Error with updating book</string>
+
+    <!-- Toast message in editor when CALL  SUPPLIER button is pressed, but phone number is empty  -->
+    <string name="call_supplier_failed">Please add a phone number and press again</string>
+
+    <!-- Toast message in editor when CALL  SUPPLIER button is pressed, but the book hasn't saved yet  -->
+    <string name="save_before_call">Please add a phone number and save the book first</string>
+
+    <!-- Toast message in editor if user hasn't fill any of the fields  -->
+    <string name="editor_empty_fields">Please fill in the fields</string>
+
+    <!-- Toast message in editor if user hasn't fill the name of the book  -->
+    <string name="editor_empty_book_name">Please add a name of the book</string>
+
+    <!-- Toast message in editor if user hasn't fill the price of the book  -->
+    <string name="editor_empty_price">Please add a price for the book</string>
+
+    <!-- Toast message in editor if user hasn't fill the quantity of the book  -->
+    <string name="editor_empty_quantity">Please add a quantity</string>
+
+    <!-- Toast message in editor if user hasn't fill the supplier of the book  -->
+    <string name="editor_empty_supplier">Please add a Supplier name</string>
+
+    <!-- Toast message in editor if user hasn't fill the supplier of the book  -->
+    <string name="editor_empty_supplier_phone">Please add a Supplier phone</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current book [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message when user wants to delete a book [CHAR LIMIT=NONE] -->
+    <string name="delete_book_dialog_msg">Are you sure you want to delete this book?</string>
+
+    <!-- Dialog message when user wants to delete all books [CHAR LIMIT=NONE] -->
+    <string name="delete_all_books_dialog_msg">Are you sure you want to delete all books?</string>
+
+    <!-- Dialog button text for the option to delete a book/books [CHAR LIMIT=20] -->
+    <string name="delete_yes">Yes</string>
+
+    <!-- Dialog button text for the option to keep a book/books [CHAR LIMIT=20] -->
+    <string name="delete_no">No</string>
+
+    <!-- Toast message in catalog when all book were successfully deleted  -->
+    <string name="delete_all_books_successful">Books deleted</string>
+
+    <!-- Toast message in catalog when all book have failed to be deleted  -->
+    <string name="delete_all_books_failed">Books deleted</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/layout_margin_padding_8"
+    android:paddingTop="@dimen/layout_margin_padding_8">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_padding_16"
+        android:layout_marginStart="@dimen/layout_margin_padding_16"
+        android:textAppearance="?android:textAppearanceMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Product Name" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_padding_8"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Price: 20$" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_padding_8"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        tools:layout_editor_absoluteX="@dimen/layout_margin_padding_16"
+        tools:text="Quantity: 3" />
+
+    <Button
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_margin_padding_16"
+        android:layout_marginRight="@dimen/layout_margin_padding_16"
+        android:background="@color/colorAccent"
+        android:focusable="false"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="SALE" />
+
+</android.support.constraint.ConstraintLayout>

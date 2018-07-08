@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/CategoryStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_8"
+            android:layout_marginLeft="@dimen/layout_margin_padding_16"
+            android:layout_marginRight="@dimen/layout_margin_padding_8"
+            android:layout_marginStart="@dimen/layout_margin_padding_16"
+            android:layout_marginTop="@dimen/layout_margin_padding_16"
+            android:text="Overview"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:layout_constraintEnd_toStartOf="@+id/edit_book_name"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Overview" />
+
+        <EditText
+            android:id="@+id/edit_book_name"
+            style="@style/EditFieldsStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_16"
+            android:layout_marginLeft="@dimen/layout_margin_padding_8"
+            android:layout_marginRight="@dimen/layout_margin_padding_16"
+            android:layout_marginStart="@dimen/layout_margin_padding_8"
+            android:ems="10"
+            android:hint="@string/edit_book_name_hint"
+            android:inputType="textCapWords"
+            android:maxLength="150"
+            app:layout_constraintBaseline_toBaselineOf="@+id/overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintStart_toEndOf="@+id/overview"
+            tools:text="Book Name" />
+
+        <EditText
+            android:id="@+id/edit_book_price"
+            style="@style/EditFieldsStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_8"
+            android:layout_marginRight="@dimen/layout_margin_padding_8"
+            android:layout_marginTop="@dimen/layout_margin_padding_8"
+            android:ems="10"
+            android:hint="@string/edit_book_price_hint"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            app:layout_constraintEnd_toStartOf="@+id/edit_book_currency"
+            app:layout_constraintStart_toStartOf="@+id/edit_book_name"
+            app:layout_constraintTop_toBottomOf="@+id/edit_book_name"
+            tools:text="Price" />
+
+        <TextView
+            android:id="@+id/edit_book_currency"
+            style="@style/EditFieldsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_padding_8"
+            android:text="@string/edit_book_currency"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_book_price"
+            app:layout_constraintEnd_toEndOf="@+id/edit_book_name"
+            app:layout_constraintTop_toBottomOf="@+id/edit_book_name" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/EditorButtonStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_16"
+            android:layout_marginRight="@dimen/layout_margin_padding_16"
+            android:text="@string/edit_book_plus_btn"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_book_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/edit_book_quantity" />
+
+        <EditText
+            android:id="@+id/edit_book_quantity"
+            style="@style/EditFieldsStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_8"
+            android:layout_marginRight="@dimen/layout_margin_padding_8"
+            android:layout_marginTop="@dimen/layout_margin_padding_8"
+            android:ems="10"
+            android:hint="@string/edit_book_quantity_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@+id/minus"
+            app:layout_constraintTop_toBottomOf="@+id/edit_book_price"
+            tools:text="Quantity" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/EditorButtonStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_8"
+            android:layout_marginRight="@dimen/layout_margin_padding_8"
+            android:layout_marginTop="@dimen/layout_margin_padding_8"
+            android:text="@string/edit_book_minus_btn"
+            app:layout_constraintEnd_toStartOf="@+id/edit_book_quantity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/edit_book_price"
+            app:layout_constraintTop_toBottomOf="@+id/edit_book_price" />
+
+        <TextView
+            android:id="@+id/supplier_text_view"
+            style="@style/CategoryStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_8"
+            android:layout_marginLeft="@dimen/layout_margin_padding_16"
+            android:layout_marginRight="@dimen/layout_margin_padding_8"
+            android:layout_marginStart="@dimen/layout_margin_padding_16"
+            android:layout_marginTop="@dimen/layout_margin_32"
+            android:text="Supplier"
+            android:textAppearance="?android:textAppearanceSmall"
+            app:layout_constraintEnd_toStartOf="@+id/supplier_name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_book_quantity"
+            tools:text="Supplier" />
+
+        <EditText
+            android:id="@+id/supplier_name"
+            style="@style/EditFieldsStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_margin_padding_16"
+            android:layout_marginLeft="@dimen/layout_margin_padding_8"
+            android:layout_marginRight="@dimen/layout_margin_padding_16"
+            android:layout_marginStart="@dimen/layout_margin_padding_8"
+            android:ems="10"
+            android:hint="@string/edit_book_supplier_name_hint"
+            android:inputType="textCapWords"
+            android:maxLength="150"
+            app:layout_constraintBaseline_toBaselineOf="@+id/supplier_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintStart_toEndOf="@+id/supplier_text_view"
+            tools:text="Supplier Name" />
+
+        <EditText
+            android:id="@+id/supplier_phone"
+            style="@style/EditFieldsStyle"
+            android:layout_width="@dimen/layout_width_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_padding_8"
+            android:ems="10"
+            android:hint="@string/edit_book_supplier_phone_hint"
+            android:inputType="phone"
+            android:maxLength="20"
+            app:layout_constraintEnd_toEndOf="@+id/supplier_name"
+            app:layout_constraintStart_toStartOf="@+id/supplier_name"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_name"
+            tools:text="Supplier Phone Number" />
+
+        <Button
+            android:id="@+id/call_supplier"
+            style="@style/EditorButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_padding_16"
+            android:padding="@dimen/layout_button_padding"
+            android:text="CALL SUPPLIER"
+            app:layout_constraintStart_toStartOf="@+id/supplier_phone"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_phone"
+            tools:text="CALL SUPPLIER" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

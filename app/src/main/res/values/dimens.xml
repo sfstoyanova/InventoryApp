@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="layout_margin_padding_16">16dp</dimen>
+
+    <dimen name="layout_margin_padding_8">8dp</dimen>
+
+    <dimen name="layout_margin_32">32dp</dimen>
+
+    <dimen name="layout_width_weight">0dp</dimen>
+
+    <dimen name="layout_button_padding">5dp</dimen>
+</resources>
